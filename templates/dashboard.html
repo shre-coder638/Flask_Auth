@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="text-center">Welcome to the Dashboard</h1>
+        <h1 class="text-center">{{user.name}}</h1>
+        <p class="text-center">This is a protected area. Only logged-in users can see this.</p>
+    </div>
+{% endblock body %}
