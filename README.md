@@ -64,4 +64,8 @@ Flask_Auth_App/
 - `/register` - User registration
 - `/login` - User login
 - `/dashboard` - Protected user dashboard (login required)
+<<<<<<< HEAD
 - `/logout` - Logout and clear session
+=======
+- `/logout` - Logout and clear session
+>>>>>>> 03ceb2ae774cf739af595e3090c6deccbc367f1b
