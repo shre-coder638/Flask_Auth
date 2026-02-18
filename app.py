@@ -38,6 +38,18 @@ def register():
         email = request.form['email']
         password = request.form['password']
         
+        if not name or not name.strip():
+            return render_template("Register.html", error="Name should not be empty")
+        
+        if not email or not email.strip():
+            return render_template("Register.html", error="Email should not be empty")
+        
+        if not password or not password.strip():
+            return render_template("Register.html", error="Password should not be empty")
+        
+        if len(password) < 6:
+            return render_template("Register.html", error="Password must be up to 6 characters only")
+        
         user = User.query.filter_by(email=email).first()
         if user:
             return render_template("Register.html", error="Email already registered")
