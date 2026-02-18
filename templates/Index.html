@@ -1,4 +1,59 @@
 {% extends 'base.html' %}
 {% block body %}
-    <h1>Welcome to the Index Page</h1>
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Welcome to Flask Auth App</h1>
+            <p class="lead">A secure and modern authentication system built with Flask</p>
+            <hr class="my-4">
+            <p>Get started by creating an account or logging in to access your dashboard</p>
+            <div class="mt-4">
+                <a class="btn btn-primary btn-lg mx-2" href="{{ url_for('register') }}" role="button">Sign Up</a>
+                <a class="btn btn-success btn-lg mx-2" href="{{ url_for('login') }}" role="button">Login</a>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">🔒 Secure</h3>
+                        <p class="card-text">Your data is protected with industry-standard encryption and security practices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">⚡ Fast</h3>
+                        <p class="card-text">Lightning-fast authentication and user management powered by Flask.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">🎯 Simple</h3>
+                        <p class="card-text">Easy to use interface with intuitive navigation and clean design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Features</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">✓ User Registration and Login</li>
+                            <li class="list-group-item">✓ Secure Password Hashing</li>
+                            <li class="list-group-item">✓ Session Management</li>
+                            <li class="list-group-item">✓ User Dashboard</li>
+                            <li class="list-group-item">✓ Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock body %}
